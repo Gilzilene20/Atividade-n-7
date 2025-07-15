@@ -1,30 +1,38 @@
+/* 1. 4 cores diferentes */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #e6ecf5; /* fundo geral cinza-claro */
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1; /* cor de fundo geral */
   text-align: center;
+  color: #333; /* cor padrão do texto */
+}
+
+/* 2. Utilização de classe e id */
+#topo {
+  font-family: 'Georgia', serif;
+  color: #2a3d66; /* Cor azul-escuro */
 }
 
 header {
-  background-color: #4a90e2; /* azul topo */
+  background-color: #d94c3c; /* Cor do topo: vermelho */
   color: white;
-  padding: 15px 0;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 20px;
-}
-
-header p {
-  margin: 5px 0 0 0;
-  font-size: 14px;
-  font-style: italic;
-}
-
-main {
   padding: 20px 0;
+}
+
+/* 3. Pseudo-classe :hover */
+header h1:hover {
+  color: #ffcc00; /* cor amarela ao passar o mouse */
+  cursor: pointer;
+}
+
+header p:hover {
+  font-style: normal;
+}
+
+h2 {
+  font-family: 'Verdana', sans-serif;
+  color: #2c7fb8; /* Cor azul claro para os títulos */
 }
 
 section {
@@ -33,40 +41,52 @@ section {
   width: 80%;
   max-width: 600px;
   margin: 30px auto;
-  padding: 5px;
+  padding: 20px;
   box-sizing: border-box;
+  border-radius: 8px;
 }
 
+/* 4. Imagens com tamanho adequado */
 section img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
-  border: 10px solid white; /* borda branca ao redor da imagem */
+  margin: 0 auto;
+  border: 5px solid #ddd; /* borda leve ao redor da imagem */
   box-sizing: border-box;
 }
 
-section h2 {
-  margin: 10px 0 5px 0;
-  font-size: 16px;
-}
-
+/* 5. Fontes de texto diferentes */
 section p {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #666;
   margin: 0 0 10px 0;
-  font-size: 12px;
-  font-style: italic;
 }
 
 section p a {
-  color: #4a90e2;
+  color: #d94c3c;
   text-decoration: none;
 }
 
 section p a:hover {
   text-decoration: underline;
+  color: #ffcc00; /* Cor amarela no hover */
+}
+
+/* 6. Centralizando o conteúdo */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 footer {
   margin-top: 30px;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: 12px;
-  color: #333;
+  background-color: #2a3d66; /* Cor de fundo do rodapé */
+  color: white;
 }
